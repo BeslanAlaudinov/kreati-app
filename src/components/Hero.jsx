@@ -1,5 +1,6 @@
-import logoSrc from '../assets/Union.svg'
-import styles from './Hero.module.css'
+import logoSrc from "../assets/Union.svg";
+import styles from './Hero.module.css';
+import LogoSlider from './LogoSlider';
 
 export default function Hero() {
   return (
@@ -11,9 +12,9 @@ export default function Hero() {
 
         <div className={styles.titleBlock}>
           <p className={styles.headline}>
-            Превращем продукты{' '}
+            Превращаем продукты{' '}
             <br />
-            <em>в эстетичные&nbsp; решения</em>
+            <span className={styles.headlineItalic}>в эстетичные&nbsp; решения</span>
           </p>
           <p className={styles.subtitle}>
             Помогаем компаниям выделиться среди конкурентов и завоевать
@@ -30,6 +31,9 @@ export default function Hero() {
           <span>Наши работы</span>
         </button>
       </div>
+
+      {/* Премиум слайдер логотипов */}
+      <LogoSlider />
     </section>
-  )
+  );
 }
