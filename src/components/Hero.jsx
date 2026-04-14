@@ -1,4 +1,4 @@
-import logoSrc from '../assets/union.svg'
+import logoSrc from "../assets/Union.svg";
 import styles from './Hero.module.css'
 
 export default function Hero() {
