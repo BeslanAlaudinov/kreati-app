@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,500&family=Inter+Tight:wght@500&family=Plus+Jakarta+Sans:ital,wght@1,500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body,
+#root {
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 400;
+}

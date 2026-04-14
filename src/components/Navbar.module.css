@@ -1,0 +1,155 @@
+.navbar {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  z-index: 10;
+  animation: fadeDown 0.8s ease forwards;
+  opacity: 0;
+}
+
+.link {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.64px;
+  line-height: 1.08;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+
+/* Бургер (скрыт на десктопе) */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+  z-index: 20;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Мобильное меню */
+.mobileMenu {
+  display: none;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* ── Планшет (до 768px) ── */
+@media (max-width: 768px) {
+  .navbar {
+    top: 20px;
+    gap: 20px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+/* ── Телефон (до 560px) ── */
+@media (max-width: 560px) {
+  .navbar {
+    top: 24px;
+    left: auto;
+    right: 20px;
+    transform: none;
+    animation: none;
+    opacity: 1;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    animation: fadeIn 0.25s ease forwards;
+  }
+
+  .mobileMenu a {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -1.2px;
+    padding: 16px 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+  }
+
+  .mobileMenu a:hover {
+    opacity: 0.5;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
