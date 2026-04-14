@@ -48,11 +48,11 @@
 }
 
 .headline {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 80px;
-  letter-spacing: -6.4px;
+  letter-spacing: -2.8px;
   line-height: 1.04;
   background: linear-gradient(95deg, #FFF -4.74%, #978EAD 101.29%);
   -webkit-background-clip: text;
@@ -65,11 +65,11 @@
 }
 
 .headlineItalic {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-style: italic;
   font-size: 80px;
-  letter-spacing: -6.4px;
+  letter-spacing: -2.8px;
   line-height: 1.04;
   background: linear-gradient(95deg, #FFF -4.74%, #978EAD 101.29%);
   -webkit-background-clip: text;
@@ -78,12 +78,11 @@
 }
 
 .subtitle {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 200;
   font-style: normal;
   font-size: 20px;
   line-height: 1.32;
-  letter-spacing: -0.8px;
   color: rgba(255, 255, 255, 0.70);
   width: 627px;
   text-align: center;
@@ -131,10 +130,9 @@
   position: relative;
   z-index: 1;
   font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 16px;
   color: #fff;
-  letter-spacing: -0.64px;
   line-height: 1.08;
   white-space: nowrap;
 }
@@ -167,10 +165,9 @@
 
 .btnSecondary span {
   font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 16px;
   color: #fff;
-  letter-spacing: -0.64px;
   line-height: 1.08;
   white-space: nowrap;
 }
@@ -202,7 +199,6 @@
   .headline,
   .headlineItalic {
     font-size: 56px;
-    letter-spacing: -4px;
   }
 
   .subtitle {
@@ -227,13 +223,11 @@
   .headline,
   .headlineItalic {
     font-size: 36px;
-    letter-spacing: -2.4px;
     line-height: 1.08;
   }
 
   .subtitle {
     font-size: 15px;
-    letter-spacing: -0.4px;
     width: 100%;
   }
 
@@ -257,7 +251,6 @@
   .headline,
   .headlineItalic {
     font-size: 28px;
-    letter-spacing: -1.6px;
   }
 
   .subtitle {

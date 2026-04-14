@@ -13,11 +13,10 @@
 
 .link {
   font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 16px;
   color: #fff;
   text-decoration: none;
-  letter-spacing: -0.64px;
   line-height: 1.08;
   white-space: nowrap;
   transition: opacity 0.2s ease;
@@ -116,11 +115,10 @@
 
   .mobileMenu a {
     font-family: 'Inter Tight', sans-serif;
-    font-weight: 500;
+    font-weight: 200;
     font-size: 32px;
     color: #fff;
     text-decoration: none;
-    letter-spacing: -1.2px;
     padding: 16px 0;
     opacity: 0.9;
     transition: opacity 0.2s ease;

@@ -1,4 +1,4 @@
-import logoSrc from "../assets/Union.svg";
+import logoSrc from '../assets/union.svg'
 import styles from './Hero.module.css'
 
 export default function Hero() {
@@ -13,7 +13,7 @@ export default function Hero() {
           <p className={styles.headline}>
             Превращем продукты{' '}
             <br />
-            <span className={styles.headlineItalic}>в эстетичные&nbsp; решения</span>
+            <em>в эстетичные&nbsp; решения</em>
           </p>
           <p className={styles.subtitle}>
             Помогаем компаниям выделиться среди конкурентов и завоевать
